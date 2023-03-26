@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mercury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mercury"
+        android:textSize="48sp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintBottom_toTopOf="@id/venus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/venus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/venus"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mercury" />
+
+    <TextView
+        android:id="@+id/earth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/earth"
+        app:layout_constraintTop_toBottomOf="@id/venus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/mars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mars"
+        app:layout_constraintTop_toBottomOf="@id/earth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/jupiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jupiter"
+        app:layout_constraintTop_toBottomOf="@id/mars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/saturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saturn"
+        app:layout_constraintTop_toBottomOf="@id/jupiter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/uranus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uranus"
+        app:layout_constraintTop_toBottomOf="@id/saturn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/neptune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neptune"
+        app:layout_constraintTop_toBottomOf="@id/uranus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" android:textSize="48sp" />
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/neptune"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

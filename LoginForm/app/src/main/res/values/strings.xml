@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login Form</string>
+    <string name="password">Enter your password:</string>
+    <string name="username">Enter your username:</string>
+    <string name="button">LOGIN</string>
+    <string name="successful_login">Hello %s you are now \n logged in, we hope you enjoy using the \n app!</string>
+    <string name="not_successful_login">Wrong Form</string>
+</resources>

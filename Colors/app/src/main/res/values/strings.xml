@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Colors</string>
+    <string name="description">Add two hexadecimal characters between 0-9
+        A-F or a-f without the \'#\' for each channel</string>
+    <string name="red_channel">Red channel</string>
+    <string name="green_channel">Green channel</string>
+    <string name="blue_channel">Blue channel</string>
+    <string name="title">Create a RGB Color</string>
+    <string name="button_text">Create RGB Color</string>
+    <string name="parameters_empty">Parameters can\'t be empty</string>
+</resources>
