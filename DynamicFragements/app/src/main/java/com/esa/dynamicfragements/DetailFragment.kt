@@ -98,7 +98,7 @@ class DetailFragment : Fragment() {
                 dateRange?.text = getString(R.string.date_range,"December 22 - January 19")
             }
             else -> {
-                Toast.makeText(context, getString(R.string.unknown_star_sign), Toast.LENGTH_LONG).show();
+                Toast.makeText(context, getString(R.string.unknown_star_sign), Toast.LENGTH_LONG).show()
             }
         }
 
