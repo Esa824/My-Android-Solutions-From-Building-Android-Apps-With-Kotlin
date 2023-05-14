@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAddCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerView" />
+
+        <EditText
+            android:id="@+id/etCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/category_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddCategory"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnAddCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etCategoryName"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/tvAddTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_todo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnAddCategory" />
+
+        <EditText
+            android:id="@+id/etTodoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddTodo"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etTodoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_description"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etTodoName"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etTodoCategoryId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/category_id"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etTodoDescription"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
+
+
+        <Button
+            android:id="@+id/btnAddTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etTodoCategoryId" />
+
+        <TextView
+            android:id="@+id/tvUpdateCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnAddTodo" />
+
+        <EditText
+            android:id="@+id/etCategoryUpdateId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/category_id"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUpdateCategory"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etCategoryUpdateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/category_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etCategoryUpdateId"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnUpdateCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etCategoryUpdateName" />
+
+        <TextView
+            android:id="@+id/tvUpdateTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_todo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnUpdateCategory" />
+
+        <EditText
+            android:id="@+id/etTodoUpdateId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_id"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/tvUpdateTodo"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etTodoUpdateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/etTodoUpdateId"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etTodoUpdateDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_description"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/etTodoUpdateName"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etTodoUpdateCategoryId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/category_id"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/etTodoUpdateDescription"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnUpdateTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etTodoUpdateCategoryId" />
+
+
+
+<Button
+            android:id="@+id/btnDeleteAccount"
+            android:text="@string/delete_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnUpdateTodo"/>
+        <TextView
+            android:id="@+id/tvUpdateCredentials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_credentials"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnDeleteAccount" />
+
+        <EditText
+            android:id="@+id/etNameUpdateCredentials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUpdateCredentials"
+            tools:ignore="TextFields"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etPasswordUpdateCredentials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etNameUpdateCredentials"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnUpdateCredentials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update_credentials"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPasswordUpdateCredentials" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

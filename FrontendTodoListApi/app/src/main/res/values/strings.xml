@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Frontend Todo List Api</string>
+    <string name="add_category">Add Category</string>
+    <string name="category_name">Category Name</string>
+    <string name="add">Add</string>
+    <string name="add_todo">Add Todo</string>
+    <string name="todo_name">Todo Name</string>
+    <string name="todo_description">Todo Description</string>
+    <string name="category_id">Category ID</string>
+    <string name="update_category">Update Category</string>
+    <string name="update">Update</string>
+    <string name="update_todo">Update Todo</string>
+    <string name="todo_id">Todo ID</string>
+    <string name="delete_category">Delete Category</string>
+    <string name="delete">Delete</string>
+    <string name="delete_todo">Delete Todo</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="update_credentials">Update Credentials</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Building Primary And Secondary App Navigation</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="sports">Sports</string>
+    <string name="hockey">Hockey</string>
+    <string name="basketball">Basketball</string>
+    <string name="football">Football</string>
+
+    <string name="home_fragment">HomeFragment</string>
+    <string name="profile_fragment">ProfileFragment</string>
+    <string name="sports_fragment">SportsFragment</string>
+    <string name="hockey_fragment">HockeyFragment</string>
+    <string name="football_fragment">FootballFragment</string>
+    <string name="basketball_fragment">BasketballFragment</string>
+</resources>
